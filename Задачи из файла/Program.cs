@@ -18,11 +18,36 @@ namespace Задачи_из_файла
             Console.WriteLine("номер 2");
             Console.WriteLine(50);
             Console.WriteLine(10);
-            Console.ReadKey();
 
             /* 3) Составить программу вывода на экран «столбиком» четырех любых чисел */
             Console.WriteLine("номер 3");
-            Console.WriteLine(""
+            Console.WriteLine(11);
+            Console.WriteLine(22);
+            Console.WriteLine(454);
+            Console.WriteLine(1001);
+
+            /* 4) Пользователь вводит число. Выведите на экран число, которое больше введенного на 10 */
+            Console.WriteLine("номер 4");
+            Console.WriteLine("Введите любое число: ");
+            int x = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine(x + 10);
+
+            /* 5) Дана сторона квадрата. Найти его периметр */
+            Console.WriteLine("номер 5");
+            Console.WriteLine("Введите сторону квадрата");
+            int side = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine($"Периметр равен: {side*4}");
+
+            /* 6) Дан радиус окружности. Найти длину окружности и площадь круга */
+            Console.WriteLine("номер 6");
+            Console.WriteLine("Укажите радиус окружности: ");
+            int rad = Convert.ToInt32(Console.ReadLine());
+            double lenn = 2*Math.PI*rad;
+            double circle = Math.PI*rad*rad;
+            Console.WriteLine($"Длинна окружности = {lenn}, площадь круг = {circle}");
+            Console.ReadKey();
+
+
         }
     }
 }
